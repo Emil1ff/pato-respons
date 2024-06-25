@@ -1,0 +1,866 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  justify-content: center;
+  gap: 150px;
+  align-items: center;
+  background-color: rgba(80, 79, 77, 0.603);
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  position: fixed;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 55px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  color: white;
+}
+
+.main {
+  cursor: pointer;
+  width: 30px;
+  height: 10px;
+  border: 2px 0px solid;
+}
+
+a {
+  color: white;
+  transition: 0.5s;
+}
+a:hover {
+  color: rgb(255, 0, 0);
+}
+
+.home {
+  background-image: url(https://preview.colorlib.com/theme/pato/images/slide1-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.come {
+  font-size: 60px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  cursor: pointer;
+}
+
+.pato {
+  font-size: 90px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  cursor: pointer;
+}
+
+.look {
+  cursor: pointer;
+  border-radius: 10px;
+  border: 0px;
+  width: 135px;
+  height: 40px;
+  color: red;
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+.eat {
+  cursor: pointer;
+  border-radius: 10px;
+  border: 0px;
+  width: 200px;
+  height: 60px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.877);
+  transition: 0.5s;
+  font-size: 20px;
+}
+
+.eat:hover {
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+.look:hover {
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+
+.points {
+  display: flex;
+  gap: 10px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 0px solid;
+  background-color: rgba(255, 255, 255, 0.671);
+  transition: 0.5s;
+}
+
+.circle:hover {
+  background-color: rgb(255, 0, 0);
+  border: 2px solid white;
+}
+
+.card {
+  background: url(https://preview.colorlib.com/theme/pato/images/our-story-01.jpg.webp)
+    center center no-repeat;
+}
+
+.box1 {
+  background: url(https://preview.colorlib.com/theme/pato/images/intro-01.jpg.webp)
+    center center no-repeat;
+}
+
+.box2 {
+  background: url(https://preview.colorlib.com/theme/pato/images/intro-02.jpg.webp)
+    center center no-repeat;
+}
+
+.box3 {
+  background: url(https://preview.colorlib.com/theme/pato/images/intro-04.jpg.webp)
+    center center no-repeat;
+}
+
+.lunch {
+  background: url(https://preview.colorlib.com/theme/pato/images/our-menu-01.jpg.webp)
+    center center no-repeat;
+}
+.dinner {
+  background: url(https://preview.colorlib.com/theme/pato/images/our-menu-05.jpg.webp)
+    center center no-repeat;
+}
+.drink {
+  background: url(https://preview.colorlib.com/theme/pato/images/our-menu-08.jpg.webp)
+    center center no-repeat;
+}
+.starters {
+  background: url(https://preview.colorlib.com/theme/pato/images/our-menu-10.jpg.webp)
+    center center no-repeat;
+}
+
+.happy-hour {
+  background: url(https://preview.colorlib.com/theme/pato/images/our-menu-13.jpg.webp)
+    center center no-repeat;
+}
+
+.desert {
+  background: url(https://preview.colorlib.com/theme/pato/images/our-menu-16.jpg.webp)
+    center center no-repeat;
+}
+
+.top,
+.bottom {
+  display: flex;
+  gap: 20px;
+}
+
+.boxs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.happy-hour {
+  height: 300px;
+  width: 619px;
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 70px 63px -60px #000;
+  cursor: pointer;
+  transition: 0.5s;
+  background-size: 1000px;
+}
+.top-left {
+  display: flex;
+  gap: 20px;
+}
+.top-right {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+.lunch,
+.dinner,
+.desert,
+.happy-hour,
+.starters,
+.drink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lunch,
+.dinner {
+  height: 400px;
+  width: 300px;
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 70px 63px -60px #000;
+  cursor: pointer;
+  transition: 0.5s;
+  background-size: 500px;
+}
+.starters,
+.drink {
+  height: 192px;
+  width: 300px;
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 70px 63px -60px #000;
+  cursor: pointer;
+  transition: 0.5s;
+  background-size: 500px;
+}
+.card,
+.box1,
+.box2,
+.box3,
+.desert {
+  height: 300px;
+  width: 300px;
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 70px 63px -60px #000;
+  cursor: pointer;
+  transition: 0.5s;
+  background-size: 500px;
+}
+
+.card:hover {
+  background-size: 540px;
+}
+.box1:hover {
+  background-size: 540px;
+}
+.box2:hover {
+  background-size: 540px;
+}
+.box3:hover {
+  background-size: 540px;
+}
+
+.lunch:hover {
+  background-size: 540px;
+}
+.dinner:hover {
+  background-size: 540px;
+}
+.starters:hover {
+  background-size: 540px;
+}
+.drink:hover {
+  background-size: 540px;
+}
+.desert:hover {
+  background-size: 540px;
+}
+.happy-hour:hover {
+  background-size: 1100px;
+}
+.well {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 30px 0px;
+  gap: 30px;
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60vh;
+}
+
+.res {
+  font-size: 30px;
+  color: red;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.res-h {
+  font-size: 60px;
+  color: rgb(0, 0, 0);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.our {
+  margin: 20px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.our:hover {
+  color: rgb(255, 0, 0);
+}
+
+.dicover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(https://preview.colorlib.com/theme/pato/images/bg-intro-01.jpg);
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+
+.res-e {
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: auto;
+  padding: 20px 0px;
+  width: 100%;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 450px;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 70px 63px -60px #000;
+  cursor: pointer;
+}
+
+.our-menu {
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  flex-direction: column;
+  background-color: antiquewhite;
+  width: 100%;
+}
+
+footer {
+  margin: 0px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: #000;
+}
+.foot {
+  color: rgb(168, 168, 168);
+}
+
+.get {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.get:hover {
+  color: red;
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    width: 1000px;
+    gap: 60px;
+
+    background-color: rgb(0, 0, 0);
+    justify-content: space-around;
+  }
+
+  nav ul {
+    gap: 10px;
+    font-size: 10px;
+  }
+  .boxs {
+    flex-wrap: wrap;
+  }
+  .top,
+  .bottom {
+    flex-wrap: wrap;
+  }
+  .starters,
+  .drink,
+  .lunch,
+  .dinner,
+  .happy-hour,
+  .desert {
+    height: 192px;
+    width: 360px;
+  }
+  .our-menu {
+    background-color: rgba(0, 0, 0, 0.356);
+  }
+  .top-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .come {
+    font-size: 30px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: white;
+    cursor: pointer;
+  }
+
+  .pato {
+    font-size: 40px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    color: white;
+    cursor: pointer;
+  }
+  .home {
+    height: 90vh;
+    width: 1000px;
+  }
+  .logo img {
+    width: 70px;
+  }
+  .none {
+    display: none;
+  }
+  .well {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .res {
+    font-size: 20px;
+    color: red;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .res-h {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-family: "Times New Roman", Times, serif;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+  }
+  .rem {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 579px) {
+  header {
+    display: flex;
+    width: 579px;
+    gap: 60px;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 10px;
+  }
+
+  .icons {
+    display: none;
+  }
+  .boxs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .top,
+  .bottom {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .starters,
+  .drink,
+  .lunch,
+  .dinner,
+  .happy-hour,
+  .desert {
+    height: 192px;
+    width: 579px;
+  }
+  .our-menu {
+    background-color: rgba(0, 0, 0, 0.356);
+  }
+  .top-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .come {
+    font-size: 30px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: white;
+    cursor: pointer;
+  }
+
+  .pato {
+    font-size: 40px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    color: white;
+    cursor: pointer;
+  }
+  .home {
+    height: 90vh;
+    width: 579px;
+  }
+  .logo img {
+    width: 90px;
+  }
+  .none {
+    display: none;
+  }
+  .well {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45vh;
+  }
+  .res {
+    font-size: 20px;
+    color: red;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .res-h {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-family: "Times New Roman", Times, serif;
+  }
+  .cards {
+    flex-wrap: wrap;
+    gap: 20px;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+  }
+  .rem {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header {
+    width: 375px;
+    gap: 60px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+  }
+
+  nav ul {
+    gap: 10px;
+    font-size: 10px;
+  }
+
+  .icons {
+    display: none;
+  }
+  .boxs {
+    flex-wrap: wrap;
+  }
+  .top,
+  .bottom {
+    flex-wrap: wrap;
+  }
+  .starters,
+  .drink,
+  .lunch,
+  .dinner,
+  .happy-hour,
+  .desert {
+    height: 192px;
+    width: 360px;
+  }
+  .our-menu {
+    background-color: rgba(0, 0, 0, 0.356);
+  }
+  .top-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .come {
+    font-size: 30px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: white;
+    cursor: pointer;
+  }
+
+  .pato {
+    font-size: 40px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    color: white;
+    cursor: pointer;
+  }
+  .home {
+    height: 90vh;
+    width: 375px;
+  }
+  .logo img {
+    width: 70px;
+  }
+  .none {
+    display: none;
+  }
+  .well {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .res {
+    font-size: 20px;
+    color: red;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .res-h {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-family: "Times New Roman", Times, serif;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+  }
+  .rem {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  header {
+    width: 414px;
+    gap: 60px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+  }
+  nav ul {
+    gap: 10px;
+    font-size: 10px;
+  }
+  .icons {
+    display: none;
+  }
+  .boxs {
+    flex-wrap: wrap;
+  }
+  .top,
+  .bottom {
+    flex-wrap: wrap;
+  }
+  .starters,
+  .drink,
+  .lunch,
+  .dinner,
+  .happy-hour,
+  .desert {
+    height: 192px;
+    width: 360px;
+  }
+  .our-menu {
+    background-color: rgba(0, 0, 0, 0.356);
+  }
+  .top-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .come {
+    font-size: 30px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: white;
+    cursor: pointer;
+  }
+  .pato {
+    font-size: 40px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    color: white;
+    cursor: pointer;
+  }
+  .home {
+    height: 90vh;
+    width: 414px;
+  }
+  .logo img {
+    width: 70px;
+  }
+  .none {
+    display: none;
+  }
+  .well {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .res {
+    font-size: 20px;
+    color: red;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .res-h {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-family: "Times New Roman", Times, serif;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+  }
+  .rem {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  header {
+    width: 375px;
+    gap: 60px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+  }
+  nav ul {
+    gap: 10px;
+    font-size: 10px;
+  }
+  .icons {
+    display: none;
+  }
+  .boxs {
+    flex-wrap: wrap;
+  }
+  .top,
+  .bottom {
+    flex-wrap: wrap;
+  }
+  .starters,
+  .drink,
+  .lunch,
+  .dinner,
+  .happy-hour,
+  .desert {
+    height: 192px;
+    width: 360px;
+  }
+  .our-menu {
+    background-color: rgba(0, 0, 0, 0.356);
+  }
+  .top-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .come {
+    font-size: 30px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: white;
+    cursor: pointer;
+  }
+  .pato {
+    font-size: 40px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    color: white;
+    cursor: pointer;
+  }
+  .home {
+    height: 90vh;
+    width: 375px;
+  }
+  .logo img {
+    width: 70px;
+  }
+  .none {
+    display: none;
+  }
+  .well {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .res {
+    font-size: 20px;
+    color: red;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .res-h {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-family: "Times New Roman", Times, serif;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+  }
+  .rem {
+    font-size: 20px;
+  }
+}
